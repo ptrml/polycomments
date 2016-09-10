@@ -4,7 +4,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Milevski Petar",
+            "name": "Petar Milevski",
             "email": "ptrmlvsk@gmail.com"
         }
     ],
@@ -13,5 +13,10 @@
       "php": ">=5.5.0",
       "illuminate/database": ">=5.0",
       "illuminate/support": ">=5.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Ptrml\\Polycomments\\":"src/"
+      }
     }
 }
