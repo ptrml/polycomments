@@ -1,0 +1,13 @@
+{
+    "name": "ptrml/polycomments",
+    "description": "Universal comments for Laravel 5+",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ptrml",
+            "email": "ptrmlvsk@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
