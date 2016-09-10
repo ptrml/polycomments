@@ -4,10 +4,14 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "ptrml",
+            "name": "Milevski Petar",
             "email": "ptrmlvsk@gmail.com"
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+      "php": ">=5.5.0",
+      "illuminate/database": ">=5.0",
+      "illuminate/support": ">=5.0"
+    }
 }
