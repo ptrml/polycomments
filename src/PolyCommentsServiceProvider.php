@@ -18,8 +18,6 @@ public function boot()
     if (! $this->app->routesAreCached())
     {
         $this->app['router']->group(['namespace' => 'Ptrml\Polycomments\Controllers','middleware' => ['web']], function () {
-            require __DIR__.'/Routes/polycomments_routes.php';
-
             require __DIR__.'/Routes/polycomments_default_routes.php';
         });
     }
@@ -28,7 +26,7 @@ public function boot()
 
     $this->publishes([
         __DIR__.'/config/polycomments.php' => config_path('ptrml/polycomments/polycomments.php'),
-        __DIR__.'/Views' => resource_path('views/ptrml/polycomments'),
+        __DIR__.'/Views' => resource_path('views/vendor/polycomments'),
         __DIR__.'/Controllers/PolyCommentsController.php' => app_path('Http/Controllers/PolyCommentsController.php'),//config_path('ptrml/polycomments/PolyCommentsController.php'),
         //__DIR__.'/Routes/polycomments_routes.php' => base_path('routes/ptrml/polycomments/polycomments_routes.php'),//config_path('ptrml/polycomments/polycomments_routes.php'),
         
