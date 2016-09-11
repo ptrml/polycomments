@@ -28,7 +28,7 @@ class Post extends Model implements CommentableInterface
 <br>
 
 ###Step 2: Frontend
-####Append <strong>PolyCommentsController.php</strong> with your calls (Post is an example model)
+####Append <strong>PolyCommentsController.php</strong> with your calls (Post is an example model):
 <pre>
 class PolyCommentsController extends Controller
 {
@@ -41,11 +41,11 @@ class PolyCommentsController extends Controller
 }
 </pre>
 (Switch the Post model with your own)
-####Append routes
+####Append routes:
 <pre>
 Route::post('/polycomments/post/{id}', 'PolyCommentsController@commentPost')->name('polycomments.post');
 </pre>
-####Add the premade comments block to the views of your model
+####Add the premade comments block to the views of your model:
 <pre>
 @include('polycomments::polycomments',['polycomments_subject'=>$post,'polycomments_route'=>'polycomments.post'])
 </pre>
@@ -53,7 +53,7 @@ Route::post('/polycomments/post/{id}', 'PolyCommentsController@commentPost')->na
 <br>
 
 ###Step 3: Customization
-####Edit <strong>views/vendor/polycomments/*</strong> for a custom look and feel
+####Edit <strong>views/vendor/polycomments/*</strong> for a custom look and feel:
 
 <br>
 ###Enjoy
