@@ -1,4 +1,4 @@
-# polycomments
+# PolyComments
 Simple hookable commenting system leveraging polymorphic relationships.Early pre-alfa. May change drastically soon.
 
 ##Installation
