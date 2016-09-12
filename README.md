@@ -15,8 +15,9 @@ Ptrml\Polycomments\PolyCommentsServiceProvider::class,
 ...
 ],
 </pre>
-####Publish stuff:
+####Publish stuff and migrate:
 <pre>php artisan vendor:publish --tag=polycomments</pre>
+<pre>php artisan migrate</pre>
 ####Implement both the interface and trait on your models:
 <pre>
 class Post extends Model implements CommentableInterface
