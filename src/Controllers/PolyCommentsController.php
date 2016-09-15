@@ -11,7 +11,7 @@ use Ptrml\Polycomments\Commenter;
 use Ptrml\Polycomments\polycomments;
 
 
-class PolyCommentsController extends Controller
+class PolycommentsController extends Controller
 {
 
     /*
@@ -24,7 +24,7 @@ class PolyCommentsController extends Controller
     }
 
     //Sample route
-    //Route::post('/polycomments/post/{id}', 'PolyCommentsController@commentPost')->name('polycomments.post');
+    //Route::post('/polycomments/post/{id}', 'PolycommentsController@commentPost')->name('polycomments.post');
    */
 
 }

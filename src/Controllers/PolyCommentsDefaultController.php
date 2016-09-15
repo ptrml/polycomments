@@ -10,7 +10,7 @@ use App\Http\Requests;
 use Ptrml\Polycomments\Comment;
 use Ptrml\Polycomments\Commenter;
 
-class PolyCommentsDefaultController extends Controller
+class PolycommentsDefaultController extends Controller
 {
     function commentComment(Request $request,$id)
     {

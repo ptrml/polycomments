@@ -1,3 +1,3 @@
 <?php
 
-//Route::post('/polycomments/post/{id}', 'PolyCommentsController@commentPost')->name('polycomments.post');
+//Route::post('/polycomments/post/{id}', 'PolycommentsController@commentPost')->name('polycomments.post');
