@@ -1,4 +1,4 @@
-# PolyComments
+# Polycomments
 Simple hookable commenting system leveraging polymorphic relationships. 
 <strong>Early super rudimentary pre-alfa. May change drastically at any time.</strong>
 
@@ -11,7 +11,7 @@ Simple hookable commenting system leveraging polymorphic relationships.
 <pre>
 'providers' => [
 ...
-Ptrml\Polycomments\PolyCommentsServiceProvider::class,
+Ptrml\Polycomments\PolycommentsServiceProvider::class,
 ...
 ],
 </pre>
@@ -30,9 +30,9 @@ class Post extends Model implements CommentableInterface
 <br>
 
 ###Step 2: Frontend
-####Append <strong>PolyCommentsController.php</strong> with your calls (Post is an example model):
+####Append <strong>PolycommentsController.php</strong> with your calls (Post is an example model):
 <pre>
-class PolyCommentsController extends Controller
+class PolycommentsController extends Controller
 {
     function commentPost(Request $request,$id)
     {
@@ -45,7 +45,7 @@ class PolyCommentsController extends Controller
 (Switch the Post model with your own)
 ####Append routes:
 <pre>
-Route::post('/polycomments/post/{id}', 'PolyCommentsController@commentPost')->name('polycomments.post');
+Route::post('/polycomments/post/{id}', 'PolycommentsController@commentPost')->name('polycomments.post');
 </pre>
 ####Add the premade comments block to the views of your model:
 <pre>
